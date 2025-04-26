@@ -150,4 +150,13 @@ button#round-btn {
   .result-box h2, .result-box p {
     margin: 0.5rem 0;
   }
+  #made-by {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #90caf9;
+    opacity: 0.8;
+    z-index: 999;
+  }
 </style>
