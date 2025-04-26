@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosine Calculator</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  
+</head>
+<body>
+  <nav style="position: absolute; top: 1rem; right: 1rem;">
+    <a href="index.html" style="margin-right: 1rem;">Rounder</a>
+    <a href="cosine.html">Trig Tools</a>
+  </nav>
+  <div class="container">
+    <h1>🧮 Cosine / Sin / Tan Calculator</h1>
+
+    <input id="trig-input" placeholder="e.g. cos(59 degrees) or sin 45" />
+    <button id="calc-btn">Calculate</button>
+
+    <div class="result-box">
+      <h2>Result:</h2>
+      <p id="trig-result">—</p>
+      <button id="round-link" style="display: none; margin-top: 1rem;">Round it?</button>
+    </div>
+  </div>
+
+  <script src="js/trig.js" defer></script>
+  <!-- Chatbot UI -->
+<div id="chatbot-toggle" style="position: fixed; bottom: 20px; right: 20px; background-color: #007aff; color: white; border-radius: 50%; width: 50px; height: 50px; font-size: 28px; text-align: center; line-height: 50px; cursor: pointer; z-index: 999;">💬</div>
+
+<div id="chatbot-box" style="position: fixed; bottom: 80px; right: 20px; width: 300px; background-color: #1e1e1e; color: white; padding: 1rem; border-radius: 8px; display: none; flex-direction: column; box-shadow: 0 0 20px rgba(0,0,0,0.4); z-index: 999;">
+  <div id="chat-messages" style="height: 200px; overflow-y: auto; margin-bottom: 0.5rem;"></div>
+  <input id="chat-input" placeholder="Ask anything..." style="padding: 0.5rem; width: 100%; border: none; border-radius: 4px; margin-bottom: 0.5rem; background-color: #2c2c2c; color: white;" />
+  <button id="chat-send" style="padding: 0.5rem; background-color: #007aff; color: white; border: none; border-radius: 4px; cursor: pointer;">Send</button>
+</div>
+</body>
+</html>
